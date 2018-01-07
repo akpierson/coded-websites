@@ -1,0 +1,350 @@
+/*******TARGET EVERYTHING******/
+
+*, *:after, *:before {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+/*******BEGIN HEADER STUFF******/
+
+header {
+    height: 70vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/topImage.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background-color: #F8F8F8;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+}
+
+nav div#logoContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav div#logoContainer img#logo {
+    padding: 10px;
+    margin-left: 10px;
+    width: auto;
+    height: 30px;
+    box-sizing: content-box;
+}
+
+nav div p.logoText {
+    font-size: 97%;
+    color: #75747c;    
+}
+
+nav ul#desktopMenu {
+    margin-left: auto;
+    width: auto;
+    display: flex;
+}
+
+nav ul#desktopMenu li {
+    list-style: none;
+    font-size: 97%;
+    padding: 10px;
+    color: #75747c;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+nav ul#desktopMenu li:last-child {
+    margin-right: 10px;
+}
+
+nav ul#desktopMenu li:hover {
+    background-color: #eeeeee;
+}
+
+nav div.mobileToggle {
+    display: flex;
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav div.mobileToggle span.line {
+    width: 90%;
+    height: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: #75747c;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+nav div.mobileNavDropdownMenu {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: auto;
+    background-color: #F8F8F8;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+}
+
+nav div.mobileNavDropdownMenu ul li {
+    list-style: none;
+    font-size: 97%;
+    padding: 10px;
+    color: #75747c;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+nav div.mobileNavDropdownMenu ul li:hover {
+    background-color: #eeeeee;
+}
+
+nav div.mobileNavDropdownMenu p {
+    font-size: 97%;
+    color: #75747c;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+div#headerCentered {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+h1#headerText {
+    font-family: 'Fugaz One', cursive;
+    color: #F8F8F8;
+    font-size: 300%;
+    display: inline-block;
+}
+
+button#scrollTo {
+    width: auto;
+    height: auto;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    border: none;
+    outline:0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button#scrollTo:hover {
+    background-color: #2B2347;
+}
+
+/*******END HEADER STUFF******/
+
+/*******BEGIN MAIN CONTENT******/
+
+section#callToAction {
+    display: flex;
+    padding: 1%;
+    background-color: #2B2347;
+    color: #F8F8F8;
+    text-align: center;
+    justify-content: center;
+    font-size: 120%;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1.announcer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #75747c;
+}
+
+div.wrapper h1.announcer {
+    color: #F8F8F8;
+}
+
+div.halfBreaker {
+    width: 85%;
+    height: 2px;
+    margin: 10px auto;
+    background-color: #eeeeee;
+}
+
+div.wrapper {
+    margin: 0px auto;
+    max-width: 85%;
+    overflow: hidden;
+}
+
+div.wrapper div.clearfix:after {
+	content: "";
+    display: table;
+    clear: both;
+    overflow: hidden;
+}
+
+[class*="col-"] {
+    padding: 5px;
+}
+
+div.wrapper div.row div.col-1-5 div.imgWrap {
+    width: 100%;
+    height: auto;
+}
+
+div.wrapper div.row div.col-1-5 div.imgWrap img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div.wrapper div.row div.col-1-4 h1, h2 {
+    color: #75747c;
+    font-weight: 300;
+}
+
+div.wrapper div.row div.col-1-4 div.breaker {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1px;
+    background-color: #eeeeee;
+    display: inline-block;
+}
+
+div.wrapper div.row div.col-1-4 div.tbreaker {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1px;
+    background-color: #eeeeee;
+    display: none;
+}
+
+div.wrapper div.row div.col-1-4 h4 {
+    color: #75747c;
+    font-weight: 300;
+}
+
+i.material-icons {
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 8px;
+    display: block;
+    color: #75747c;
+}
+
+i.material-icons.md-light {
+    color: #F8F8F8;
+    margin-bottom: 10px;
+}
+
+div.footer {
+    margin-top: 20px;
+    background-color: #2B2347;
+    max-width: 100%;
+    padding-bottom: 30px;
+}
+
+div.footer div.wrapper div.row div.col-1-3 h1 {
+    color: #F8F8F8;
+    font-weight: 300;
+    text-align: center;
+}
+
+div.footer div.wrapper div.row div.col-1-3 a {
+    border: 2px solid #F8F8F8;
+    font-size: 28px;
+    color: #F8F8F8;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.footer-text {
+    color: #F8F8F8 !important;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.toggle {
+    display: none;
+}
+
+@media all and ( min-width: 800px ) {
+
+    .col-1-3 {
+        float: left;
+        width: 33.33%;
+    }
+    .col-1-4 {
+        float: left;
+        width: 25%;
+    }
+
+    .col-1-5 {
+        float: left;
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:799px) {
+    
+    header {
+        height: 100vh;
+    }
+    
+    nav ul#desktopMenu {
+        display:  none;
+    }
+    
+    nav div.mobileToggle {
+        display: block;
+    }
+    
+    div.wrapper div.row div.col-1-4 div.tbreaker {
+        display: inline-block;
+    }
+    
+     .col-1-5 {
+      float: left;
+      width: 50%;
+  }
+    
+    [class*="col-"] {
+    padding: 2px;
+}
+
+    
+}
+
+/******END MAIN CONTENT******/
