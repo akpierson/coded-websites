@@ -1,1 +1,1 @@
-A simple template website I created on my spare time for fun. Feel free to use any of its code in your own project!
+A collection of web projects I've coded, ranging from simple one page websites to javascript experiments.
